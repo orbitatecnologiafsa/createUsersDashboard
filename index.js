@@ -48,6 +48,6 @@ app.post('/users', (req, res) => {
 });
 
 // Inicializa o servidor
-app.listen(3000, () => {
+app.listen(3005, () => {
   console.log('Servidor iniciado na porta 3000');
 });
