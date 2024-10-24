@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Painel de Cadastro</title>
+</head>
+<body>
+  <div id="app">
+    <div id="box">
+      <h1>Cadastrar Empresa</h1> 
+      <label for="">Empresa</label>
+      <input type="text" class="empresa" v-model="empresa">
+      <label for="">CNPJ</label>
+      <input type="email" class="email" v-model="cnpj" v-mask="['##.###.###/####-##']">
+      <label for="">Password</label>
+      <input type="password" class="password" v-model="password">
+      <button type="button" @click="postEmail()">Criar Usuário</button>
+    </div>
+
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="./vueCreate.js"></script>
+  <script src="./vuemask.js"></script>
+
+</body>
+
+</html>

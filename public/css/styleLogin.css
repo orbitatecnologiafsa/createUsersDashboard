@@ -1,0 +1,105 @@
+body{
+  background: rgb(57,165,232);
+  background: linear-gradient(90deg, rgba(57,165,232,1) 0%, rgba(0,131,255,1) 100%);
+}
+
+
+#abaLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 420px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.box::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200%;
+  background: linear-gradient(180deg, #07e2f1, #a071ff);
+  animation: animate 3s linear infinite;
+ 
+}
+@keyframes animate {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+.box::after{
+  content: "";
+  position: absolute;
+  background-color: #58bfff;
+  inset: 5px;
+  border-radius: inherit;
+}
+
+
+
+.form{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form label{
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.form input{
+  position: relative;
+  z-index: 1;
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  border: #58bfff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 1rem;
+  
+}
+.form input:focus{
+  outline: none;
+}
+
+.form button{
+  position: relative;
+  z-index: 1;
+  width: 10rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(57,165,232,1) 0%, rgba(0,131,255,1) 100%);
+  transition: 0.3s;
+  color: white;
+
+}
+
